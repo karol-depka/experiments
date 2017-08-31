@@ -1,0 +1,9 @@
+// https://github.com/firebase/bolt/blob/master/docs/guide.md
+
+path /Experiments/CheckFirebaseQuery/List {
+  write() { true }
+  read() { true }
+  index() { [ 'history/created/something/when' ] }
+}
+
+isCurrentUser(uid) { auth != null && auth.uid == uid }

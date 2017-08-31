@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "Experiments": {
+      "CheckFirebaseQuery": {
+        "List": {
+          ".read": "true",
+          ".write": "true",
+          ".indexOn": [
+            "history/created/something/when"
+          ]
+        }
+      }
+    }
+  }
+}

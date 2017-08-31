@@ -1,0 +1,89 @@
+[debug] [2017-08-31T16:46:30.138Z] ----------------------------------------------------------------------
+[debug] [2017-08-31T16:46:30.140Z] Command:      /usr/local/Cellar/node/8.1.3/bin/node /usr/local/bin/firebase init
+[debug] [2017-08-31T16:46:30.140Z] CLI Version:  3.9.1
+[debug] [2017-08-31T16:46:30.140Z] Platform:     darwin
+[debug] [2017-08-31T16:46:30.140Z] Node Version: v8.1.3
+[debug] [2017-08-31T16:46:30.141Z] Time:         Thu Aug 31 2017 18:46:30 GMT+0200 (CEST)
+[debug] [2017-08-31T16:46:30.141Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-31T16:46:30.150Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-08-31T16:46:30.150Z] > authorizing via signed-in user
+[info] 
+     🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥     🔥🔥🔥     🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥     🔥🔥 🔥🔥       🔥🔥     🔥🔥  🔥🔥   🔥🔥  🔥🔥       🔥🔥
+     🔥🔥🔥🔥🔥🔥    🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥   🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥    🔥🔥  🔥🔥       🔥🔥     🔥🔥 🔥🔥     🔥🔥       🔥🔥 🔥🔥
+     🔥🔥       🔥🔥🔥🔥 🔥🔥     🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥     🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/kd/Dropbox/KM15/R/Experiments/experiments
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2017-08-31T16:46:42.544Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-08-31T16:46:42.544Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/4uv8ZjdZAjwoKJjqeLB3VEttSGdgsUX4lpEPmnABKF0',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Aug 31 2017 18:46:42 GMT+0200 (CEST)
+[debug] [2017-08-31T16:46:42.834Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-31T16:46:42.842Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ Thu Aug 31 2017 18:46:42 GMT+0200 (CEST)
+[debug] [2017-08-31T16:46:43.715Z] <<< HTTP RESPONSE 200
+[info] i  .firebaserc already has a default project, skipping
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] Skipping overwrite of Database Rules.
+[info] The rules defined in database.rules.json will be published when you do firebase deploy.
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2017-08-31T16:47:03.312Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-31T16:47:03.312Z] > authorizing via signed-in user
+[debug] [2017-08-31T16:47:03.313Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-08-31T16:47:03.313Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/4uv8ZjdZAjwoKJjqeLB3VEttSGdgsUX4lpEPmnABKF0',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Aug 31 2017 18:47:03 GMT+0200 (CEST)
+[debug] [2017-08-31T16:47:03.456Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-31T16:47:03.468Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/experiments-7fg  
+ Thu Aug 31 2017 18:47:03 GMT+0200 (CEST)
+[debug] [2017-08-31T16:47:04.131Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-31T16:47:04.131Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/experiments-7fg/tokens  
+ Thu Aug 31 2017 18:47:04 GMT+0200 (CEST)
+[debug] [2017-08-31T16:47:04.900Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-31T16:47:04.901Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/experiments-7fg?updateMask=usageSettings { usageSettings: { consumerEnableStatus: 'ENABLED' } } 
+ Thu Aug 31 2017 18:47:04 GMT+0200 (CEST)
+[debug] [2017-08-31T16:47:04.902Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/experiments-7fg?updateMask=usageSettings { usageSettings: { consumerEnableStatus: 'ENABLED' } } 
+ Thu Aug 31 2017 18:47:04 GMT+0200 (CEST)
+[info] ✔  Wrote functions/package.json
+[info] ✔  Wrote functions/index.js
+[debug] [2017-08-31T16:47:07.437Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-31T16:47:08.510Z] <<< HTTP RESPONSE 200
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

@@ -9,7 +9,11 @@ import {RouterModule, Routes} from '@angular/router'
 import {environment} from '../environments/environment'
 import {AngularFireModule} from 'angularfire2';
 import { CheckRoutingComponent } from './check-routing/check-routing.component'
-import {AngularFireDatabaseModule} from 'angularfire2/database'
+import {AngularFireDatabaseModule} from 'angularfire2/database';
+import { CheckFormsComponent } from './check-forms/check-forms.component';
+import { NestedFormComponent } from './check-forms/nested-form/nested-form.component';
+import { CustomFormComponentComponent } from './check-forms/nested-form/custom-form-component/custom-form-component.component'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 
 
 const appRoutes: Routes = [
@@ -21,6 +25,10 @@ const appRoutes: Routes = [
   {
     path: 'check-queries',
     component: CheckFirebaseQueryComponent,
+  },
+  {
+    path: 'check-forms',
+    component: CheckFormsComponent,
   },
   {
     path: 'trackBy',
@@ -43,6 +51,9 @@ const appRoutes: Routes = [
     NgforParentComponent,
     NgforTrackbyComponent,
     CheckRoutingComponent,
+    CheckFormsComponent,
+    NestedFormComponent,
+    CustomFormComponentComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,6 +61,8 @@ const appRoutes: Routes = [
     // AngularFireModule.initializeApp(firebaseConfig, firebaseAuthConfig),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

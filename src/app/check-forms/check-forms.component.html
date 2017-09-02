@@ -1,0 +1,18 @@
+<p>
+  check-forms works!
+</p>
+
+<button (click)="changeFormValue()">
+  changeFormValue()
+</button>
+
+<form [formGroup]="myForm">
+
+  <app-nested-form
+    [myFormGroup]="myForm"
+    nestedFormGroupName="nestedForm"
+  ></app-nested-form>
+
+</form>
+
+{{ myForm.value | json }}

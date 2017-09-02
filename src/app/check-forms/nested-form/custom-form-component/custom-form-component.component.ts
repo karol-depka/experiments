@@ -43,4 +43,12 @@ export class CustomFormComponentComponent implements OnInit, ControlValueAccesso
     // no-op
   }
 
+  onClick() {
+    this.value = {
+      a: 'chByUser',
+      b: ['changedByUser']
+    }
+    this.propagateChange(this.value)
+  }
+
 }

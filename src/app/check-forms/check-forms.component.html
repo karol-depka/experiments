@@ -16,3 +16,14 @@
 </form>
 
 {{ myForm.value | json }}
+<br/>
+<br/>
+Status: {{ myForm.status | json }}
+
+Dirty: {{ myForm.dirty | json }}
+
+<button
+  (click)="save()"
+>
+  save
+</button>

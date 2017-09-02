@@ -23,6 +23,9 @@ export class CheckFormsComponent implements OnInit {
   }
 
   private initForm() {
+    // https://scotch.io/tutorials/how-to-build-nested-model-driven-forms-in-angular-2
+    // https://angular.io/api/forms/FormGroupName
+    // https://medium.com/spektrakel-blog/angular2-building-nested-reactive-forms-7978ecd145e4
     this.myForm = this.fb.group({
       // nestedFormGroupName: this.createSubFormDefinition()
       nestedFormGroupName: this.fb.group({
@@ -52,7 +55,9 @@ export class CheckFormsComponent implements OnInit {
 
   @HostListener('window:beforeunload', ['$event'])
   handleBeforeUnload($event) {
-    // $event.returnValue = 'Your data will be lost!';
+    if ( this.myForm.dirty ) {
+      $event.returnValue = 'Your data will be lost!';
+    }
     // https://www.chromestatus.com/feature/5349061406228480
     // https://stackoverflow.com/questions/40719711/prevent-closing-browser-tab-when-form-is-dirty-in-angular-2
 
@@ -60,6 +65,10 @@ export class CheckFormsComponent implements OnInit {
     // if (connected) {
     //   return "You have unsaved data changes. Are you sure to close the page?"
     // }
+  }
+
+  save() {
+    this.myForm.markAsPristine()
   }
 
 }

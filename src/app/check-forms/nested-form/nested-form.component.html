@@ -1,12 +1,16 @@
 <div
   [formGroup]="myFormGroup"
 >
-  <div formGroupName="nestedFormGroupName">
+  <div
+    [formGroup]="nestedFormGroup"
+  >
     <app-custom-form-component
       formControlName="customItem"
     >
 
     </app-custom-form-component>
   </div>
+
+  <button (click)="setNestedFormValue()">setNestedFormValue()</button>
 
 </div>

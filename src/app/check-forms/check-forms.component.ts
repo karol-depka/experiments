@@ -10,6 +10,7 @@ import {NestedFormComponent} from './nested-form/nested-form.component'
 export class CheckFormsComponent implements OnInit {
 
   myForm: FormGroup
+  nestedFormGroup: FormGroup
 
   // @ViewChild(NestedFormComponent) nestedComponent: NestedFormComponent
 
@@ -26,13 +27,14 @@ export class CheckFormsComponent implements OnInit {
     // https://scotch.io/tutorials/how-to-build-nested-model-driven-forms-in-angular-2
     // https://angular.io/api/forms/FormGroupName
     // https://medium.com/spektrakel-blog/angular2-building-nested-reactive-forms-7978ecd145e4
+    this.nestedFormGroup = this.fb.group({
+      customItem: {
+        a: 'aa', b: ['b']
+      }
+    })
     this.myForm = this.fb.group({
       // nestedFormGroupName: this.createSubFormDefinition()
-      nestedFormGroupName: this.fb.group({
-        customItem: {
-          a: 'aa', b: ['b']
-        }
-      })
+      nestedFormGroupName: this.nestedFormGroup
     })
   }
 

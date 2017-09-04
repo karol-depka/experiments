@@ -8,8 +8,10 @@ import {FormBuilder, FormGroup} from '@angular/forms'
 })
 export class NestedFormComponent implements OnInit {
 
-  @Input() nestedFormGroupName: string
+  // @Input() nestedFormGroupName: string
   @Input() myFormGroup
+
+  @Input() nestedFormGroup: FormGroup
 
   static createSubFormDefinition() {
     return {
@@ -22,6 +24,14 @@ export class NestedFormComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+  }
+
+  setNestedFormValue() {
+    this.nestedFormGroup.setValue({
+      customItem: {
+        a: 'set just nested form', b: ['sn', 'sn']
+      }
+    })
   }
 
 }

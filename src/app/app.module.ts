@@ -13,7 +13,8 @@ import {AngularFireDatabaseModule} from 'angularfire2/database';
 import { CheckFormsComponent } from './check-forms/check-forms.component';
 import { NestedFormComponent } from './check-forms/nested-form/nested-form.component';
 import { CustomFormComponentComponent } from './check-forms/nested-form/custom-form-component/custom-form-component.component'
-import {FormsModule, ReactiveFormsModule} from '@angular/forms'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { SelectsComponent } from './selects/selects.component'
 
 
 const appRoutes: Routes = [
@@ -36,6 +37,9 @@ const appRoutes: Routes = [
   }, {
     path: 'check-routing',
     component: CheckRoutingComponent,
+  }, {
+    path: 'selects',
+    component: SelectsComponent,
   },
   {
     path: '**',
@@ -54,6 +58,7 @@ const appRoutes: Routes = [
     CheckFormsComponent,
     NestedFormComponent,
     CustomFormComponentComponent,
+    SelectsComponent,
   ],
   imports: [
     BrowserModule,

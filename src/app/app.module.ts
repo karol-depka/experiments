@@ -15,6 +15,8 @@ import { NestedFormComponent } from './check-forms/nested-form/nested-form.compo
 import { CustomFormComponentComponent } from './check-forms/nested-form/custom-form-component/custom-form-component.component'
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { SelectsComponent } from './selects/selects.component'
+import {HttpModule} from '@angular/http'
+import {SomeHttpCallsService} from './some-http-calls.service'
 
 
 const appRoutes: Routes = [
@@ -68,8 +70,11 @@ const appRoutes: Routes = [
     AngularFireDatabaseModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpModule,
   ],
-  providers: [],
+  providers: [
+    SomeHttpCallsService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -8,3 +8,18 @@
     <option>op2</option>
   </select>
 </form>
+
+<h1>Result</h1>
+
+<!--<ng-template *ngIf="callResult">-->
+
+<p *ngFor="let x of callResult">
+  {{x.title}}
+</p>
+
+  {{callResult | json}}
+
+
+  <!--{{callResult.get.userId | json}}-->
+
+<!--</ng-template>-->
